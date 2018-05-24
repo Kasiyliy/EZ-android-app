@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CreatePostFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:orientation="vertical"
+            tools:context="com.easy.air.easydelivery.PostCreationActivity">
+
+            <ImageButton
+                android:id="@+id/imageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <EditText
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:hint="Post Title"
+                android:padding="10dp"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/textDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:hint="Post Description"
+                android:padding="10dp"
+                android:textColor="@android:color/background_dark" />
+
+            <EditText
+                android:id="@+id/textWhere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:hint="Transferring location"
+                android:padding="10dp"
+                android:textColor="@android:color/background_dark" />
+
+            <EditText
+                android:id="@+id/textFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:hint="Take from"
+                android:padding="10dp"
+                android:textColor="@android:color/background_dark" />
+
+            <EditText
+                android:id="@+id/phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Phone number:"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/postPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Price"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/postBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/holo_green_light"
+                android:text="Post"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/holo_red_light"
+                android:text="Back"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
