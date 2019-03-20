@@ -28,13 +28,13 @@
                 android:layout_marginBottom="20dp"
                 android:visibility="gone" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="176dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/ic_ez" />
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="176dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:src="@drawable/ic_ez" />-->
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
