@@ -1,13 +1,16 @@
 package com.easy.air.finaleasydelivery.activity;
 
 import android.Manifest;
+import android.app.Notification;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -94,11 +97,23 @@ public class SeparatePostActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+//                Intent callIntent = new Intent(Intent.ACTION_CALL);
+//                callIntent.setData(Uri.parse("tel:" + phoneNum));
+//                if ( ContextCompat.checkSelfPermission( getApplicationContext(), Manifest.permission.CALL_PHONE ) == PackageManager.PERMISSION_GRANTED ) {
+//                    startActivity(callIntent);
+//                }
+
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:" + phoneNum));
+                callIntent.setData(Uri.parse("tel:"+phoneNum.trim()));
+
                 if ( ContextCompat.checkSelfPermission( getApplicationContext(), Manifest.permission.CALL_PHONE ) == PackageManager.PERMISSION_GRANTED ) {
                     startActivity(callIntent);
                 }
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        phoneNum,
+                        Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show();
             }
         });
     }
